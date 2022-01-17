@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile nav</title>
+    <link rel="stylesheet" href="navbar.css" />
+    <script defer src="navbar.js"></script>
+</head>
+
+<body>
+    <header class="primary-header flex">
+        <div>
+            <img src="img/logo.svg" alt="website logo" class="logo">
+        </div>
+        <button aria-controls="primary-nav" aria-expanded="false" class="nav-toggle">
+            <span class="sr-only">Menu</span>
+        </button>
+        <nav>
+            <ul id="primary-nav" class="primary-nav flex flex-mobile" data-visible="false">
+                <li class="active">
+                    <a href="#">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Showcase
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Products
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Shipping
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Contact
+                    </a>
+                </li>
+                <div class="nav-icon flex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="container flex">
+        <div class="text-container flex">
+            <img class="phone-img" src="img/mobile.svg" alt="phone image">
+            <span>Responsive mobile-first navigation component.
+            </span>
+        </div>
+    </div>
+
+</body>
+
+</html>
