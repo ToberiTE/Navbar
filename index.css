@@ -2,11 +2,9 @@
   box-sizing: border-box;
   text-shadow: 1px 1px 2px hsla(0, 0%, 0%, 0.5);
 }
-body,
-.primary-nav::before,
-.text-container::before {
+body {
   font-family: sans-serif;
-  background: url(img/bg.jpg) center center / cover no-repeat fixed;
+  background: url(img/bg.jpg) center / cover no-repeat fixed;
 }
 .logo {
   margin: 2rem;
@@ -69,25 +67,15 @@ body,
     inset: 0 0 0 60%;
     gap: 3em;
     padding: min(30vh, 10rem) 2em;
-    background: hsla(0, 0%, 100%, 0.1);
+    background: hsla(0, 0%, 15%, 0.8);
     flex-direction: column;
-    z-index: 100;
+    z-index: 1000;
     transform: translateX(100%);
     transition: transform 250ms ease;
+    overflow: auto;
   }
   .primary-nav[data-visible="true"] {
     transform: translateX(0%);
-  }
-
-  .primary-nav::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    filter: blur(10px);
-    z-index: -1;
   }
   .nav-toggle {
     display: block;
